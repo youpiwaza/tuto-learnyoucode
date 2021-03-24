@@ -2,7 +2,17 @@ const
     fs = require('fs')
     ,path = require('path')
 ;
-const filename          = process.argv[2];
+
+// console.log(process.argv);
+
+
+
+
+
+
+
+
+const folderName        = process.argv[2];
 let extensionAFiltrer   = process.argv[3]; // md
 // On transforme "md" en ."md"
 extensionAFiltrer = `.${extensionAFiltrer}`;
@@ -17,13 +27,15 @@ extensionAFiltrer = `.${extensionAFiltrer}`;
 // Lire le contenu d'un dossier
 //      https://nodejs.org/docs/latest-v14.x/api/fs.html#fs_fs_readdir_path_options_callback
 fs.readdir(
-    filename,
+    folderName,
     (err, list) => {
         // console.log(err);
         // console.log(list);
         if (err) {
             return console.log(err) // propagation et court-circuit
         }
+
+        // console.log(list);
 
         // On filtre le tableau qui contient les éléments
         //      https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
@@ -36,9 +48,9 @@ fs.readdir(
             return (path.extname(elementQuejeVaisTester) === extensionAFiltrer);
         });
 
-        // console.log(result); // OK
-        // Affichage souhaité
-        //      https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+        // console.log(result); // OK, sous forme de tableau
+        // // Affichage souhaité
+        // //      https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/join
         console.log(result.join('\n'));
     }
 );
