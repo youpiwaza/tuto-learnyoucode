@@ -21,6 +21,9 @@ fs.readdir(
     (err, list) => {
         // console.log(err);
         // console.log(list);
+        if (err) {
+            return console.log(err) // propagation et court-circuit
+        }
 
         // On filtre le tableau qui contient les éléments
         //      https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
