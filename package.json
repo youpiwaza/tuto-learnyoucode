@@ -8,7 +8,8 @@
     "async": "^3.2.0",
     "bl": "^4.1.0",
     "concat-stream": "^2.0.0",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "through2-map": "^3.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
