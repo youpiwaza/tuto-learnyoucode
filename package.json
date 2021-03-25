@@ -4,8 +4,11 @@
   "description": ".. de [Learn you node](https://github.com/workshopper/learnyounode).",
   "main": "01-hello.js",
   "dependencies": {
+    "after": "^0.8.2",
+    "async": "^3.2.0",
     "bl": "^4.1.0",
-    "concat-stream": "^2.0.0"
+    "concat-stream": "^2.0.0",
+    "node-fetch": "^2.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
