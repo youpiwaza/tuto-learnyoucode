@@ -1,0 +1,23 @@
+{
+  "name": "tuto-learnyoucode",
+  "version": "1.0.0",
+  "description": ".. de [Learn you node](https://github.com/workshopper/learnyounode).",
+  "main": "01-hello.js",
+  "dependencies": {
+    "bl": "^4.1.0",
+    "concat-stream": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youpiwaza/tuto-learnyoucode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youpiwaza/tuto-learnyoucode/issues"
+  },
+  "homepage": "https://github.com/youpiwaza/tuto-learnyoucode#readme"
+}
