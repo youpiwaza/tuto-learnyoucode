@@ -2,7 +2,7 @@ const myModule = require('./06-le-module-en-question')
 
 // console.log(process.argv);
 
-const folderName          = process.argv[2];
+const folderName        = process.argv[2];
 let extensionAFiltrer   = process.argv[3];
 
 myModule(   folderName,
